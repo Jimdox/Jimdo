@@ -1987,7 +1987,7 @@ end
     end
     _G.Clip2 = true
     wait(Distance/Speed)
-    _G.Clip2 = false
+    _G.Clip2 = true
     end
    
 
@@ -2486,9 +2486,9 @@ ToggleButton.BorderSizePixel = 0
 ToggleButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Font = Enum.Font.SourceSans
-ToggleButton.Text = "Open|Close"
+ToggleButton.Text = "Open"
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ToggleButton.TextSize = 14.000
+ToggleButton.TextSize = 15.000
 ToggleButton.Draggable = true
 ToggleButton.MouseButton1Click:Connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)
@@ -2511,7 +2511,7 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
     local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
         Title = "Select Fast Attack",
         Values = listfastattack,
-        Multi = false,
+        Multi = true,
         Default = 1,
     })
     DropdownDelayAttack:SetValue("Fast Attack")
@@ -2522,8 +2522,8 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
 	elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
 		_G.Fast_Delay = 0.25
 	elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
-		_G.Fast_Delay = 0.05
-	end
+		_G.Fast_Delay = 0.5
+			end
 end)
 
     local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
