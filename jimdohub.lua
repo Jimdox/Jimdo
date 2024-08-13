@@ -5,7 +5,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "jimdo Hub|Prenium",
-    SubTitle = "beta|join discord https://discord.com/invite/8BTpXhzqFh",
+    SubTitle = "join discord https://discord.com/invite/8BTpXhzqFh",
     TabWidth = 190,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = false,
